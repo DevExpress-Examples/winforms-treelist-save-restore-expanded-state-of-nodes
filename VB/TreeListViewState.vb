@@ -73,7 +73,7 @@ Namespace SaveLoadExpanded
 				expanded = GetExpanded()
 				selected = GetSelected()
 				focused = TreeList.FocusedNode(TreeList.KeyFieldName)
-				topNode = TreeList.GetNodeByVisibleIndex(TreeList.TopVisibleNodeIndex)(TreeList.KeyFieldName)
+				topNode = TreeList.GetNodeByVisibleIndex(TreeList.TopVisibleNodeIndex)?(TreeList.KeyFieldName)
 			Else
 				Clear()
 			End If
